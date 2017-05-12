@@ -130,7 +130,7 @@ window.onload = function () {
         chosenCategory = categories[Math.floor(Math.random() * categories.length)];
         word = chosenCategory[Math.floor(Math.random() * chosenCategory.length)];
         word = word.replace(/\s/g, "-");
-        console.log(word);
+        //console.log(word);
         buttons();
 
         geusses = [ ];
@@ -262,7 +262,7 @@ window.onload = function () {
         //The `angularShake` function
         function angularShake() {
             if (counter < numberOfShakes) {
-                console.log(tiltAngle);
+                //console.log(tiltAngle);
                 //Reset the element's rotation
                 element.style.transform = 'rotate(' + startAngle + 'deg)';
 
@@ -272,7 +272,7 @@ window.onload = function () {
                 //Rotate the element left or right, depending on the direction,
                 //by an amount in radians that matches the magnitude
                 var angle = Number(magnitude * tiltAngle).toFixed(2);
-                console.log(angle);
+                //console.log(angle);
                 element.style.transform = 'rotate(' + angle + 'deg)';
                 counter += 1;
 
